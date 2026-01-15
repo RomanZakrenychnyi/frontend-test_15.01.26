@@ -3,12 +3,12 @@
 
 .bg-wrapper {
   overflow: hidden;
-  background-image: image-set(url('../../images/hero/coach@1x.webp') 1x, url('../../images/hero/coach@2x.webp') 2x);
+  background-image: image-set(url('../images/hero/coach@1x.webp') 1x, url('../images/hero/coach@2x.webp') 2x);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
 
   @include mq($mobile) {
-    background-image: image-set(url('../../images/hero/coach-mobile@1x.webp') 1x, url('../../images/hero/coach-mobile@2x.webp') 2x);
+    background-image: image-set(url('../images/hero/coach-mobile@1x.webp') 1x, url('../images/hero/coach-mobile@2x.webp') 2x);
   }
 }

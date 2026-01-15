@@ -36,8 +36,8 @@ body::after {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-image: -webkit-image-set(url(../../images/hero/shadow@1x.webp) 1x, url(../../images/hero/shadow@2x.webp) 2x);
-  background-image: image-set(url(../../images/hero/shadow@1x.webp) 1x, url(../../images/hero/shadow@2x.webp) 2x);
+  background-image: -webkit-image-set(url(../images/hero/shadow@1x.webp) 1x, url(../images/hero/shadow@2x.webp) 2x);
+  background-image: image-set(url(../images/hero/shadow@1x.webp) 1x, url(../images/hero/shadow@2x.webp) 2x);
   width: 100%;
   height: clamp(884px, 884px + (var(--content-vw, 100vw) - 393px) * 0.2344466274, 1242px);
   z-index: 0;
@@ -52,16 +52,16 @@ body::after {
 
 .bg-wrapper {
   overflow: hidden;
-  background-image: -webkit-image-set(url("../../images/hero/coach@1x.webp") 1x, url("../../images/hero/coach@2x.webp") 2x);
-  background-image: image-set(url("../../images/hero/coach@1x.webp") 1x, url("../../images/hero/coach@2x.webp") 2x);
+  background-image: -webkit-image-set(url("../images/hero/coach@1x.webp") 1x, url("../images/hero/coach@2x.webp") 2x);
+  background-image: image-set(url("../images/hero/coach@1x.webp") 1x, url("../images/hero/coach@2x.webp") 2x);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
 }
 @media screen and (max-width: 767px) {
   .bg-wrapper {
-    background-image: -webkit-image-set(url("../../images/hero/coach-mobile@1x.webp") 1x, url("../../images/hero/coach-mobile@2x.webp") 2x);
-    background-image: image-set(url("../../images/hero/coach-mobile@1x.webp") 1x, url("../../images/hero/coach-mobile@2x.webp") 2x);
+    background-image: -webkit-image-set(url("../images/hero/coach-mobile@1x.webp") 1x, url("../images/hero/coach-mobile@2x.webp") 2x);
+    background-image: image-set(url("../images/hero/coach-mobile@1x.webp") 1x, url("../images/hero/coach-mobile@2x.webp") 2x);
   }
 }
 
