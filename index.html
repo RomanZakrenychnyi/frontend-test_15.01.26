@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SportFit — Программа тренировок</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="bg-wrapper">
+      <header class="header">
+        <div class="container header__container">
+          <a href="/" class="logo">SPORTFIT</a>
+
+          <button class="burger" aria-label="Открыть меню">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              НОВАЯ ПРОГРАММА<br />
+              ТРЕНИРОВОК НА 30 ДНЕЙ
+            </h1>
+
+            <p class="hero__subtitle">Достигай результата без диет и стресса</p>
+
+            <button class="btn btn--primary js-lead">ПОПРОБОВАТЬ БЕСПЛАТНО</button>
+          </div>
+
+          <div class="hero__image">
+            <picture>
+              <source srcset="images/hero/coach@1x.webp 1x, images/hero/coach@2x.webp 2x" type="image/webp" />
+              <img src="images/hero/coach@1x.webp" alt="Тренер с гантелей" loading="lazy" />
+            </picture>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="program">
+      <div class="container">
+        <h2 class="program__title">ПРОГРАММА</h2>
+
+        <div class="slider">
+          <button class="slider__arrow slider__arrow--prev" aria-label="Назад"></button>
+
+          <div class="slider__track-wrapper">
+            <ul class="slider__track">
+              <li class="slider__slide">
+                <picture>
+                  <source srcset="images/program/item-1@1x.webp 1x, images/program/item-1@2x.webp 2x" type="image/webp" />
+                  <img src="images/program/item-1@1x.webp" alt="Гантели и гиря" loading="lazy" />
+                </picture>
+              </li>
+              <li class="slider__slide">
+                <picture>
+                  <source srcset="images/program/item-1@1x.webp 1x, images/program/item-1@2x.webp 2x" type="image/webp" />
+                  <img src="images/program/item-1@1x.webp" alt="Гантели и гиря" loading="lazy" />
+                </picture>
+              </li>
+              <li class="slider__slide">
+                <picture>
+                  <source srcset="images/program/item-1@1x.webp 1x, images/program/item-1@2x.webp 2x" type="image/webp" />
+                  <img src="images/program/item-1@1x.webp" alt="Гантели и гиря" loading="lazy" />
+                </picture>
+              </li>
+              <li class="slider__slide">
+                <picture>
+                  <source srcset="images/program/item-1@1x.webp 1x, images/program/item-1@2x.webp 2x" type="image/webp" />
+                  <img src="images/program/item-1@1x.webp" alt="Гантели и гиря" loading="lazy" />
+                </picture>
+              </li>
+              <li class="slider__slide">
+                <picture>
+                  <source srcset="images/program/item-1@1x.webp 1x, images/program/item-1@2x.webp 2x" type="image/webp" />
+                  <img src="images/program/item-1@1x.webp" alt="Гантели и гиря" loading="lazy" />
+                </picture>
+              </li>
+            </ul>
+          </div>
+
+          <button class="slider__arrow slider__arrow--next" aria-label="Вперед"></button>
+        </div>
+
+        <!-- DOTS (mobile) -->
+        <div class="slider__dots" aria-hidden="true">
+          <span class="dot dot--active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/slider.js"></script>
+  </body>
+</html>
