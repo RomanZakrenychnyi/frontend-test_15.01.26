@@ -1,7 +1,7 @@
 @use '../base/variables' as *;
 @use '../base/mixins' as *;
 
-.btn-primary {
+.btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,12 +21,23 @@
 
   transition: transform $transition, opacity $transition;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.9;
     transform: scale(1.02);
   }
 
   &:active {
     transform: scale(0.98);
+  }
+
+  &--primary {
+    @include fluid-prop('margin-top', 30px, 54px);
+    @include mq($mobile) {
+      margin-top: 490px;
+      @include fluid-prop('margin-top', 490px, 660px);
+
+      margin-inline: auto;
+    }
   }
 }

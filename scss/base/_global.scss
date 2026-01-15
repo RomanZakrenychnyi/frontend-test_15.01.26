@@ -2,9 +2,22 @@
 @use '../base/mixins' as *;
 
 body {
+  position: relative;
   font-family: 'Play', sans-serif;
   font-weight: 400;
   background-color: $color-bg-dark;
   color: $color-white;
   line-height: 1.3;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: image-set(url(../../images/hero/shadow@1x.webp) 1x, url(../../images/hero/shadow@2x.webp) 2x);
+    width: 100%;
+    @include fluid-prop('height', 884px, 1242px);
+
+    z-index: 0;
+  }
 }

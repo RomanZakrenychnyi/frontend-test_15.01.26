@@ -2,8 +2,7 @@
 @use '../base/mixins' as *;
 
 .container {
-  max-width: 1680px;
   margin-inline: auto;
-  @include fluid-prop('padding-left', 30px, 120px);
-  @include fluid-prop('padding-right', 30px, 120px);
+  @include fluid-prop('margin-left', 30px, 120px);
+  @include fluid-prop('margin-right', 30px, 120px);
 }

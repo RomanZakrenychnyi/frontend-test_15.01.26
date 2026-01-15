@@ -1,0 +1,31 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.hero {
+  position: relative;
+  z-index: 1;
+  @include fluid-prop('margin-top', 38px, 219px);
+  @include fluid-prop('margin-bottom', 38px, 489px);
+
+  &__content {
+    @include fluid-prop('max-width', 341px, 853px);
+    @include mq($mobile) {
+      margin-inline: auto;
+    }
+  }
+
+  &__title {
+    @include fluid-prop('font-size', 26px, 65px);
+    @include mq($mobile) {
+      text-align: center;
+    }
+  }
+
+  &__subtitle {
+    @include fluid-prop('margin-top', 0px, 24px, 767px, 1920px);
+    @include fluid-prop('font-size', 18px, 30px);
+    @include mq($mobile) {
+      text-align: center;
+    }
+  }
+}

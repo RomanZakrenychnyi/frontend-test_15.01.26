@@ -1,0 +1,12 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.program {
+  position: relative;
+  z-index: 1;
+  @include fluid-prop('padding-bottom', 73px, 180px);
+  &__title {
+    @include fluid-prop('margin-bottom', 30px, 75px);
+    @include fluid-prop('font-size', 26px, 35px);
+  }
+}

@@ -3,28 +3,66 @@
 
 .slider {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 57px;
 
   &__track-wrapper {
+    @include fluid-prop('height', 402px, 548px);
     overflow: hidden;
+    margin: 0 auto;
+
+    max-width: calc(455px * 3 + 15px * 2);
+
+    @include mq(1900px) {
+      @include fluid-prop('max-width', 830px, 930px, 1261px, 1900px);
+    }
+
+    @include mq(1260px) {
+      @include fluid-prop('max-width', 360px, 410px, $mobile, 1260px);
+    }
+
+    @include mq($mobile) {
+      max-width: 333px;
+    }
   }
 
   &__track {
     display: flex;
     gap: 15px;
     transition: transform $transition;
+    align-content: flex-start;
   }
 
   &__slide {
-    @include fluid-prop('min-width', 333px, 455px);
+    flex-shrink: 0;
+    @include fluid-prop('width', 333px, 455px);
     @include fluid-prop('height', 402px, 548px);
-    border-radius: $radius;
     overflow: hidden;
-    border: 2px solid $color-green;
+
+    @include mq($mobile) {
+      width: 100%;
+      height: auto;
+    }
 
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      display: block;
+    }
+  }
+
+  &__arrow {
+    flex-shrink: 0; // Чтобы стрелки не сжимались
+    @include mq($mobile) {
+      display: none;
+    }
+
+    &:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
     }
   }
 }
