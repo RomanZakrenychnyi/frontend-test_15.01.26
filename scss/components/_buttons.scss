@@ -40,4 +40,11 @@
       margin-inline: auto;
     }
   }
+
+  &--popup {
+    width: 100%;
+    @include mq($mobile) {
+      @include fluid-prop('margin-top', 30px, 100px);
+    }
+  }
 }
