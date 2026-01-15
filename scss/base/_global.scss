@@ -1,0 +1,10 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+body {
+  font-family: 'Play', sans-serif;
+  font-weight: 400;
+  background-color: $color-bg-dark;
+  color: $color-white;
+  line-height: 1.3;
+}

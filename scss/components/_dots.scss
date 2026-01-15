@@ -1,0 +1,25 @@
+@use '../base/variables' as *;
+@use '../base/mixins' as *;
+
+.slider__dots {
+  display: none;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+
+  @include mq($mobile) {
+    display: flex;
+  }
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $color-white;
+  transition: background-color $transition, opacity $transition;
+
+  &--active {
+    background-color: $color-green;
+  }
+}
